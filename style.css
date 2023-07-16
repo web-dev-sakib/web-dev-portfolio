@@ -233,7 +233,7 @@ main {
     max-width: 560px;
 }
 
-.icon>img {
+.icon > img {
     margin-right: 10px;
 }
 
@@ -253,6 +253,8 @@ form input {
     padding-left: 30px;
 }
 
+
+
 form textarea {
     width: 460px;
     border: none;
@@ -266,4 +268,56 @@ form textarea {
     font-weight: 400;
     line-height: 28px;
     /* 175% */
+}
+
+/* responsive  */
+
+@media screen and (max-width:576px) {
+    .skills-container, .resume-container, .about-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skill-description{
+        margin: 0 auto;
+    }
+    .what-i-do-description, .about {
+        padding: 20px;
+    }
+    .footer {
+        padding: 0;
+        flex-direction: column;
+    }
+    .about {
+        margin: 0;
+    }
+    .resume-title{
+        margin-top: 50px;
+    }
+    .btn-container {
+        margin-bottom: 50px;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .header {
+        background-image: none;
+    }
+    nav {
+        margin: 0;
+        flex-direction: column;
+    }
+    .dev-picture {
+        display: none;
+        visibility: hidden;
+    }
+    .profile-picture {
+        width: 300px;
+    }
+    .banner {
+        padding: 0;
+        text-align: center;
+    }
+    .banner button {
+        margin-bottom: 10px;
+    }
 }
